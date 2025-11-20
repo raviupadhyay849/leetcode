@@ -1,0 +1,4 @@
+// Question 1885: Count Pairs in Two Arrays
+ // Difficulty: MEDIUM
+ // URL: https://leetcode.com/problems/count-pairs-in-two-arrays/
+

@@ -1,0 +1,4 @@
+// Question 2051: The Category of Each Member in the Store
+ // Difficulty: MEDIUM
+ // URL: https://leetcode.com/problems/the-category-of-each-member-in-the-store/
+
