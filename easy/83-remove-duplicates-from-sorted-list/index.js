@@ -3,16 +3,30 @@
  // URL: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 
 /**
- * @param {number[]} nums
- * @return {number}
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
  */
-var removeDuplicates = function(nums) {
-    let index = 1;
-    for (let i = 1; i < nums.length; i++) {
-        if (nums[i] !== nums[i - 1]) {
-            nums[index] = nums[i];
-            index++;
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+
+    
+var deleteDuplicates = function(head) {
+    if (head === null) return null;
+    
+    let res = head;
+    
+    while (head && head.next) {
+        if (head.val === head.next.val) {
+            head.next = head.next.next;
+        } else {
+            head = head.next;
         }
     }
-    return index;
+    
+    return res;
 };
